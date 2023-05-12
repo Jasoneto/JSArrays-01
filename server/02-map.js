@@ -9,3 +9,14 @@ const newArray = letters.map(item => item + '++'); //'.map' creates a new array 
 //}
 console.log('original', letters);
 console.log('new', newArray);
+
+//other example with '.map'
+
+const numbers = [1,2,3,4,5]
+const newNumbers = numbers.map( function(number){
+    return number * 2
+})
+// o
+const newNumbers = numbers.map(number => number * 2)
+
+console.log(newNumbers) // [ 2, 4, 6, 8, 10 ]
