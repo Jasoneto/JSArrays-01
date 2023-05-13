@@ -41,7 +41,23 @@ const orders = [
         total: 240,
         delivered: true,
     },
+    {
+        customerName:'Nicole',
+        total: 2322,
+        delivered: false,
+    },
 ];
 
 const ans2 = orders.filter(item => item.delivered && item.total >= 100);
 console.log('ans2', ans2);
+
+//Creating a simple seeker engine
+//'includes' refers to the attribute customerName
+//if it includes a string itself
+
+const search = (query) => {
+    return orders.filter(item => {
+        return item.customerName.includes(query);
+    })
+}
+console.log(search('Nico'));
