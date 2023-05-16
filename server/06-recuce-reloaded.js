@@ -52,3 +52,9 @@ const ans2 = data
 }, {});
 
 console.log(ans2)
+
+//EXAMPLE 3
+
+function solution(numbers) {
+    return numbers.reduce((sum, i) => sum + i, 0)
+};
