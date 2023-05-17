@@ -93,3 +93,7 @@ const isOverlap = (newDate) => {
 }
 
 console.log('isOverlap', isOverlap(newAppointment));
+
+//for my future consideration using 'some' structure:
+//array.some(function(element, index, array));
+
