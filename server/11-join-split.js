@@ -17,3 +17,9 @@ const title = 'Arrays manipulation course';
 
 const finalUrl = title.split(' ').join('-').toLowerCase(); //if I don't put a space into the '.split(' '), it separate letter to letter LOL
 console.log(finalUrl);
+
+//Curious aport, we can use 'replaceAll' to do the same xD
+
+function solution(title) {
+	return title.replaceAll(" ", "-").toLowerCase();
+};
